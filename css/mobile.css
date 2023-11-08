@@ -1,0 +1,109 @@
+/* Mobile Styles */
+
+.header-container {
+  max-width: 100%;
+  margin: auto;
+  overflow: auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+
+.navbar {
+  padding: 0 0.5rem;
+  border-radius: 1rem;
+  transition: 0.5s ease-in-out;
+
+  display: flex;
+  align-items: center;
+}
+
+.navbar.open {
+  padding: 0 0.5rem;
+  border-radius: 1rem;
+
+  height: 30rem;
+
+  padding: 1rem;
+  align-items: flex-start;
+}
+
+.navbar a {
+  display: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo i {
+  margin: 0 1rem;
+  padding: 0.5rem;
+}
+
+.hamburger {
+  display: block;
+
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.navbar i.hamburger {
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+/* Hero Content */
+
+.info {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 1rem;
+  padding: 0 1rem;
+}
+
+.info h2 {
+  color: var(--white);
+  font-size: 2rem;
+}
+
+.info p {
+  color: var(--white);
+  font-size: 1.2rem;
+  padding: 0 1rem;
+}
+
+.btn-group {
+  margin-top: 2rem;
+
+  display: flex;
+}
+
+.get-started {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.explore {
+  font-size: 1.2rem;
+}
+
+.dashboard-img {
+  display: none;
+}
+
+.trades {
+  display: none;
+}
+
+.trades img {
+  display: none;
+}
+
+.ltc {
+  display: none;
+}

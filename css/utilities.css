@@ -1,0 +1,77 @@
+/* Variables */
+:root {
+  --white: #f4f4f4;
+  --black: #0f172a;
+}
+
+/* bg colors */
+
+.bg-gradient {
+  background: linear-gradient(to bottom right, #5b5bfd, #8857ff, #c91dfd);
+}
+
+.bg-dark {
+  background-color: var(--black);
+}
+
+.bg-light {
+  background-color: var(--white);
+}
+
+/* Buttons */
+
+.btn-light {
+  background-color: var(--white);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: var(--black);
+  border: none;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--black) 1px 3px 5px;
+}
+
+.btn-dark {
+  background-color: var(--black);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: var(--white);
+  border: none;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--black) 1px 3px 5px;
+}
+
+.btn-buy {
+  text-decoration: none;
+  font-size: 1rem;
+  color: var(--white);
+  background-color: #5b5bfd;
+  padding: 0.25rem 1rem;
+  border-radius: 0.2rem;
+}
+
+/* Colors */
+.green {
+  color: rgb(41, 198, 41);
+  font-size: 1.2rem;
+}
+
+.red {
+  color: red;
+  font-size: 1.2rem;
+}
+
+.yellow {
+  font-size: 3rem;
+  color: gold;
+}
+
+.black {
+  color: var(--black);
+  font-weight: 300;
+}

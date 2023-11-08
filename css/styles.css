@@ -1,0 +1,290 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
+
+/* Variables */
+:root {
+  --white: #f4f4f4;
+  --black: #0f172a;
+}
+
+/* Reset */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Basic styles */
+
+html,
+body {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.7;
+}
+
+/* Header */
+
+.header {
+  height: 100vh;
+  padding: 0.75rem;
+}
+
+/* Container */
+
+.header-container {
+  max-width: 90rem;
+  height: 100vh;
+  margin: auto;
+  overflow: auto;
+
+  display: grid;
+  grid-template-rows: 3.2rem repeat(2, 1fr);
+  grid-template-columns: repeat(11, 1fr);
+  gap: 1rem;
+}
+
+/* Navbar */
+
+.navbar {
+  grid-column: 1 / span 12;
+  grid-row: 1;
+
+  display: grid;
+  grid-template-columns: repeat(11, auto);
+
+  background-color: var(--black);
+  height: 3.125rem;
+  width: 100%;
+  border-radius: 2rem;
+
+  padding: 0 3.125rem;
+  box-shadow: var(--black) 1px 3px 5px;
+}
+
+.navbar > i {
+  color: #333;
+}
+
+.logo {
+  grid-column: 1 / 2;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.logo h1 {
+  font-size: 1rem;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.logo i {
+  color: var(--black);
+  background-color: var(--white);
+  padding: 0.75rem 0.75rem;
+  border-radius: 5rem;
+}
+
+.nav-tabs {
+  grid-column: 3 / span 6;
+  list-style: none;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.nav-tabs > li a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-tabs > li a:hover {
+  opacity: 0.8;
+}
+
+.auth-tabs {
+  grid-column: 10 / span 2;
+  list-style: none;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.auth-tabs > li a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.auth-tabs li:first-child:hover {
+  opacity: 0.7;
+}
+
+.auth-tabs li a.register {
+  background-color: var(--white);
+  color: var(--black);
+  padding: 0.6rem 0.5rem;
+  border-radius: 1rem;
+}
+
+.auth-tabs li a.register:hover {
+  background-color: var(--black);
+  color: var(--white);
+  opacity: 0.7;
+  transition: 0.15s ease-in;
+}
+
+.hamburger {
+  display: none;
+}
+
+/* Info Content */
+
+.info {
+  grid-column: 1 / span 12;
+
+  display: grid;
+  grid-template-columns: subgrid;
+}
+
+.info h2 {
+  grid-column: 1 / span 6;
+
+  color: var(--white);
+  font-size: 4rem;
+}
+
+.info p {
+  grid-column: 2 / span 6;
+
+  color: var(--white);
+  font-size: 2rem;
+}
+
+.btn-group {
+  grid-column: 9 / span 2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.get-started {
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.explore {
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.get-started:hover {
+  transform: scale(0.98);
+}
+
+.explore:hover {
+  transform: scale(0.98);
+}
+
+.mock-trades {
+  grid-column: 1 / span 12;
+
+  display: grid;
+  grid-template-columns: subgrid;
+}
+
+.stats {
+  grid-column: 3 / span 3;
+  grid-row: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stat i {
+  margin: 0 0.25rem;
+}
+
+.stat span {
+  margin-left: 0.25rem;
+}
+
+.performance {
+  height: 8rem;
+  width: 12rem;
+  background-color: var(--white);
+  border-radius: 0.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  margin-bottom: 0.5rem;
+  box-shadow: var(--black) 1px 3px 5px;
+}
+
+.btc {
+  rotate: -4deg;
+  grid-column: 2 / span 2 !important;
+  grid-row: 1;
+}
+
+.eth {
+  rotate: 2deg;
+}
+
+.ltc {
+  grid-column: 10 / span 2;
+  grid-row: 1;
+  rotate: 2deg;
+}
+
+.percent {
+  display: flex;
+  align-items: center;
+}
+
+.trades {
+  grid-column: 5 / span 6;
+  grid-row: 1;
+
+  border-radius: 0.5rem;
+
+  display: grid;
+  place-content: center;
+  height: 18rem;
+  width: 35rem;
+  background-color: var(--white);
+  box-shadow: var(--black) 1px 3px 5px;
+}
+
+.trades img {
+  height: 35rem;
+  width: 34rem;
+  place-content: center;
+  object-fit: contain;
+  border-radius: 1rem;
+}
+
+/* About */
+
+#about {
+  height: 100vh;
+}
